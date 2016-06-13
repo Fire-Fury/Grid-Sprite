@@ -13,11 +13,19 @@ var screen = {
 +====================+
 */
 
-var canvas = document.getElementById("canvas");
+var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
+div = document.getElementById("leftSide");
+canvas.id = "canvas";
 canvas.height = screen.h;
 canvas.width = screen.w;
-document.body.appendChild(canvas);
+canvas.style.border = "4px solid #000";
+canvas.style.background = "#FFFFFF";
+canvas.style.margin = "21px";
+div.appendChild(canvas);
+
+ctx.fillStyle = "#000000";
+ctx.fillRect(10,10,50,50);
 
 /*
 +====================+
