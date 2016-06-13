@@ -24,13 +24,26 @@
     <link rel = "stylesheet" type = "text/css" href = "style.css">
 </head>
 <body>
-    <div id = "info">
-        <h1>Grid Sprite</h1>
-        <p>By: Alexander Wang</p>
-        <p>Version 1.0</p>
-    </div>
-    <div id = "canvasdiv">
-        <canvas id = "canvas"></canvas>
+    <div id = "container">
+        <div class = "header">
+            <h1>Grid Sprite</h1>
+            <p>By: Alexander Wang</p>
+            <p>Version 1.0</p>
+        </div>
+        <div id = "leftSide" class = "leftSide">
+        </div>
+        <div class = "rightSide">
+            <textarea rows="3" cols = "50">
+Press Generate Code to generate a unique code that represents this design!
+            </textarea>
+            <button>Generate Code</button>
+            <textarea rows="3" cols = "50">
+Press Submit Code to generate the design represented by the unique code!
+            </textarea>
+            <button>Submit Code</button>
+        </div>
+        <div class = "footer">
+        </div>
     </div>
     <script src = "main.js"></script>
 </body>
